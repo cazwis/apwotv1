@@ -1,0 +1,348 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+Author  : We Sort / Ben Edmonds
+URL     : wesort.co.uk
+Twitter : @we_sort
+*/
+
+/* 		This stylesheet builds on top of reset-n-grid.css
+Colours:
+  White: #FFFFFF
+  Deep Blue: #001B2B
+  Peach: #E87570
+  Teal: #2E7484
+  Candel yellow: #FBD793
+  
+---------------------------*/
+
+/**
+ * @license
+ * MyFonts Webfont Build ID 3330523, 2017-01-12T05:56:30-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: TwCenMTStd-Bold by Monotype
+ * URL: http://www.myfonts.com/fonts/mti/twentieth-century-mt/std-bold/
+ * Copyright: Font software Copyright 1997 Adobe Systems Incorporated. Typeface designs Copyright 1997 The Monotype Corporation. All rights reserved.
+ *
+ * Webfont: Soleil-Bold by TypeTogether
+ * URL: http://www.myfonts.com/fonts/type-together/soleil/bold/
+ * Copyright: Copyright (c) 2011 by Wolfgang Homola, distributed by TypeTogether. All rights reserved.
+ *
+ * Webfont: Soleil by TypeTogether
+ * URL: http://www.myfonts.com/fonts/type-together/soleil/regular/
+ * Copyright: Copyright (c) 2011 by Wolfgang Homola, distributed by TypeTogether. All rights reserved.
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3330523
+ * Licensed pageviews: 250,000
+ *
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/32d1db");
+
+  
+@font-face {font-family: 'TwCenMTStd-Bold';src: url('/assets/webfonts/32D1DB_0_0.eot');src: url('/assets/webfonts/32D1DB_0_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/32D1DB_0_0.woff2') format('woff2'),url('/assets/webfonts/32D1DB_0_0.woff') format('woff'),url('/assets/webfonts/32D1DB_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Soleil-Bold';src: url('/assets/webfonts/32D1DB_1_0.eot');src: url('/assets/webfonts/32D1DB_1_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/32D1DB_1_0.woff2') format('woff2'),url('/assets/webfonts/32D1DB_1_0.woff') format('woff'),url('/assets/webfonts/32D1DB_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Soleil';src: url('/assets/webfonts/32D1DB_2_0.eot');src: url('/assets/webfonts/32D1DB_2_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/32D1DB_2_0.woff2') format('woff2'),url('/assets/webfonts/32D1DB_2_0.woff') format('woff'),url('/assets/webfonts/32D1DB_2_0.ttf') format('truetype');}
+ 
+
+html {
+ height:100%;
+ min-height:100%;
+ overflow-y: scroll;
+ }
+body {
+  height: 100%;
+  min-height: 100%;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  font-family: 'Soleil', Verdana, sans-serif;
+  font-style: normal;
+  font-feature-settings: "liga" 0, "clig" 0;
+  -webkit-font-smoothing: antialiased;
+  color: #E87570;
+  background-color: #001B2B;
+}
+img {
+  width: 100%;
+}
+img.no-max {
+  width: initial;
+}
+.print-only {
+  display: none;
+}
+.ie-only.notice {
+  font-size: 1rem;
+  border: 1px solid #999999;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Header, Homepage,  Footer
+---------------------------*/
+#page {
+  margin:0 auto;
+  padding: 1rem;
+  max-width: 75rem;
+  min-height: 100%;
+}
+header, header a, .button {
+  font-family: 'TwCenMTStd-Bold', Verdana, sans-serif;
+  color: #E87570;
+  border: none;
+}
+header a:hover {
+  color: #FFFFFF;
+}
+main .grid-col, header {
+  margin-bottom: 1rem;
+}
+nav.first {
+  display: inline-block;
+  margin: 1rem auto;
+}
+nav li {
+  display: inline-block;
+  padding-right: 1rem;
+}
+nav li:last-child {
+  padding-right: 0;
+}
+.logo-wrap {
+  max-width: 75%;
+}
+.logo {
+
+}
+.logo span {
+  display: none;
+}
+.candle-yellow {
+  color: #FBD793;
+}
+
+
+/*  Typography
+---------------------------*/
+p, .mb-single {
+  margin-bottom: 1rem;
+}
+p {
+  max-width: 50rem;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+h1, h2 {
+  font-weight: normal;
+}
+b, strong, .type-bold {
+  font-family: 'Soleil-Bold', Verdana, sans-serif;
+}
+a {
+  color: #FBD793;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+a:hover, .current {
+  color: #FFFFFF;
+}
+
+/*  PayPal
+---------------------------*/
+.button {
+  display: table;
+  color: #001B2B;
+  background: #001B2B;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0.25rem;
+}
+.button.standard {
+  background: #E87570;
+}
+.button.special-edition {
+  background: #2E7484;
+}
+.button tr {
+  background: none !important;
+}
+.button table, .button td {
+  border: none;
+  padding: 0;
+}
+.paypal-btn {
+  display: inline-block;
+  color: #001B2B;
+  font-size: inherit;
+  font-family: 'Soleil-Bold', Verdana, sans-serif;
+  line-height: 1;
+  text-align: center;
+  padding: 0.75rem 1rem 0.6rem;
+  margin-top: 0.5rem;
+  background: #FFFFFF;
+  border-radius: 0.25rem;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+.button select {
+  font-family: 'Soleil-Bold', Verdana, sans-serif;
+  border: none;
+  padding: 0.25rem;
+  height: 1.75rem;
+  border-radius: 0;
+}
+.standard .paypal-btn {
+  background: #2E7484;
+}
+.special-edition .paypal-btn {
+  background: #E87570;
+}
+
+/*  Mailchimp
+---------------------------*/
+.width-input {
+  width: 20rem;
+}
+
+#mc_embed_signup input {
+  font-family: 'Soleil', Verdana, sans-serif;
+  font-size: inherit;
+  border: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0.1rem 0.25rem;
+  background: #666666;
+  color: #E87570;
+  margin-bottom: 1rem;
+}
+#mc_embed_signup .submit-button {
+  cursor: pointer;
+  font-size: inherit;
+  background: #E87570;
+  color: #001B2B;
+  font-family: 'Soleil-Bold', Verdana, sans-serif;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem 0.6rem;
+}
+
+/* ------------------------------------------------------------
+                          BREAKPOINTS
+---------------- Set here AND reset-n-grid.css  ---------------
+
+/* -- Breakpoint (.bp1)
+-- Same as above, but each class has ".bp1-" prefix
+------------------------------------------------------------- */
+@media only screen and (min-width: 30em) {
+
+}
+/* -- Breakpoint (.bp2)
+------------------------------------------------------------- */
+@media only screen and (min-width: 48em) {
+#page {
+  padding: 2rem;
+}
+header {
+  margin-bottom: 3rem;
+}
+main .grid-col {
+  margin-bottom: 2rem;
+}
+nav.first {
+  float: right;
+  margin: ;
+  border-top: 1px solid #E87570;
+  border-bottom: 1px solid #E87570;
+  margin-right: 1rem;
+}
+.left-indent {
+  margin-left: 5rem;
+  padding-right: 5rem;
+}
+.left-border {
+  border-left: 0.25rem solid;
+}
+.buttons-wrap {
+  margin-top: -11rem;
+}
+.button {
+  width: auto;
+}
+.button.standard, .button.special-edition {
+  background: #001B2B;
+  color: #E87570;
+}
+
+
+/* -- Breakpoint 3 (.bp3)
+------------------------------------------------------------- */
+@media only screen and (min-width: 60em) {
+
+}
+
+/* -- Breakpoint 4 (.bp4)
+------------------------------------------------------------- */
+@media only screen and (min-width: 90em) {
+
+
+}
+
+
+
+/* Print specific styles
+------------------------------------------------------------- */
+@media print {
+/* Styles */
+.print-only {
+  display: block;
+}
+.print-none {
+  display: none;
+}
+* {
+  -webkit-print-color-adjust: exact;
+  background-color: none;
+  color: #000000 !important;
+  font-size: 18pt;
+}
+a {
+  color: #666666 !important;
+  text-decoration: none !important;
+  border-bottom: none;
+}
+a:after {
+  font-size: 10pt;
+  content: " [" attr(href) "]";
+  font-family: monospace;
+  word-wrap: break-word;
+}
+
+img {
+  display: block;
+  page-break-inside: avoid !important;
+}
+
+
+}
+
+
+/*  END  */
