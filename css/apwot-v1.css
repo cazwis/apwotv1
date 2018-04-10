@@ -202,6 +202,8 @@ a:hover, .current {
   border: 0;
   cursor: pointer;
   outline: none;
+  /* Disabling button for archived website */
+  cursor: not-allowed;
 }
 .button select {
   font-family: 'Soleil-Bold', Verdana, sans-serif;
